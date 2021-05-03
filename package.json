@@ -7,7 +7,7 @@
     "build": "parcel build index.html --public-url ./",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "predeploy": "rm -rf dist && parcel build index.html --public--url /parcel-gh-pages-deploy",
+    "predeploy": "rm -rf dist && parcel build index.html --public--url /algolia-tam-assignment",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
