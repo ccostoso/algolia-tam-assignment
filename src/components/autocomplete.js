@@ -30,7 +30,7 @@ class Autocomplete {
   _registerClient() {
     this._searchClient = algoliasearch(
       'MBJPX7YK9Q',
-      '8a02c948cc53eeadc31cd2d4ea329bff'
+      process.env.ALGOLIA_APIKEY
     );
 
     this._searchInstance = instantsearch({
