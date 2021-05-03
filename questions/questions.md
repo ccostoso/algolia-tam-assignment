@@ -87,7 +87,7 @@ Carlos
 ===
 
 Personal thoughts:
-This was fun. Unfortunatey, I'm having difficulty getting the deployed version to work--I receive "Uncaught SyntaxError: Cannot use import statement outside a module" errors when trying to get the page to run. I've spent most of the past four hours looking up parcel documentation to see if I can get it to work to no avail, so I've added an animated GIF of it working locally.
+This was fun! For the longest time I could not get the deployed version to function, but I eventually learned about the gh-pages npm and that allowed me to publish a functioning version online. I like a challenge that's also a learning experience.
 
 ![Algolia demo](./algolia-sa-assignment.gif)
 
