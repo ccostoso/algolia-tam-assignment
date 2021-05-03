@@ -89,8 +89,6 @@ Carlos
 Personal thoughts:
 This was fun! For the longest time I could not get the deployed version to function, but I eventually learned about the gh-pages npm and that allowed me to publish a functioning version online. I like a challenge that's also a learning experience.
 
-![Algolia demo](./algolia-sa-assignment.gif)
-
 Thank you for this opportunity, and best in the days and weeks ahead.
 
 Carlos
