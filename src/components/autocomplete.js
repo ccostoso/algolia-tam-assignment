@@ -28,12 +28,12 @@ class Autocomplete {
    */
   _registerClient() {
     this._searchClient = algoliasearch(
-      'VYLEWMPKEZ',
-      '8940a18fde155adf3f74b0912c267aa4'
+      'MBJPX7YK9Q',
+      '8a02c948cc53eeadc31cd2d4ea329bff'
     );
 
     this._searchInstance = instantsearch({
-      indexName: 'ecommerce-v2',
+      indexName: 'ccostoso_query_suggestions',
       searchClient: this._searchClient,
     });
   }

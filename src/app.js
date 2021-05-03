@@ -1,5 +1,12 @@
 import Autocomplete from './components/autocomplete';
 
+// Insufficient privileges to do the following, will upload data using Algolia app
+// const client = algoliasearch('MBJPX7YK9Q', '472dc7c783dca1dcb0f7b692db8c8be2');
+// const index = client.initIndex('ccostoso_query_suggestions');
+
+// const records = require('../data/products.json');
+// index.saveObjects(records, { autoGenerateObjectIDIfNotExist: true });
+
 class SpencerAndWilliamsSearch {
   constructor() {
     this._initSearch();
