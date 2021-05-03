@@ -37026,7 +37026,8 @@ var Autocomplete = /*#__PURE__*/function () {
   _createClass(Autocomplete, [{
     key: "_registerClient",
     value: function _registerClient() {
-      this._searchClient = (0, _algoliasearch.default)('MBJPX7YK9Q', "8a02c948cc53eeadc31cd2d4ea329bff" || '8a02c948cc53eeadc31cd2d4ea329bff');
+      this._searchClient = (0, _algoliasearch.default)('MBJPX7YK9Q', // I would prefer to keep this in an environment variable but I'm not sure that GitHub Pages has that functionality.
+      "8a02c948cc53eeadc31cd2d4ea329bff" || '8a02c948cc53eeadc31cd2d4ea329bff');
       this._searchInstance = (0, _instantsearch.default)({
         indexName: 'ccostoso_query_suggestions',
         searchClient: this._searchClient
@@ -37048,7 +37049,7 @@ var Autocomplete = /*#__PURE__*/function () {
       (0, _widgets.index)({
         indexName: 'ccostoso_query_suggestions'
       }).addWidgets([(0, _widgets.configure)({
-        hitsPerPage: 3
+        hitsPerPage: 1
       }), (0, _widgets.hits)({
         container: '#autocomplete-hits',
         templates: {
