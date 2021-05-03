@@ -37026,7 +37026,7 @@ var Autocomplete = /*#__PURE__*/function () {
   _createClass(Autocomplete, [{
     key: "_registerClient",
     value: function _registerClient() {
-      this._searchClient = (0, _algoliasearch.default)('MBJPX7YK9Q', "8a02c948cc53eeadc31cd2d4ea329bff");
+      this._searchClient = (0, _algoliasearch.default)('MBJPX7YK9Q', "8a02c948cc53eeadc31cd2d4ea329bff" || '8a02c948cc53eeadc31cd2d4ea329bff');
       this._searchInstance = (0, _instantsearch.default)({
         indexName: 'ccostoso_query_suggestions',
         searchClient: this._searchClient
