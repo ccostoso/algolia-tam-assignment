@@ -83,3 +83,14 @@ In the meanwhile, I'm more than happy to provide support for any issues you have
 Best,
 
 Carlos
+
+===
+
+Personal thoughts:
+This was fun. Unfortunatey, I'm having difficulty getting the deployed version to work--I receive "Uncaught SyntaxError: Cannot use import statement outside a module" errors when trying to get the page to run. I've spent most of the past four hours looking up parcel documentation to see if I can get it to work to no avail, so I've added an animated GIF of it working locally.
+
+![Algolia demo](./algolia-sa-assignment.gif)
+
+Thank you for this opportunity, and best in the days and weeks ahead.
+
+Carlos
