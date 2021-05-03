@@ -2,10 +2,11 @@ import algoliasearch from 'algoliasearch';
 import instantsearch from 'instantsearch.js';
 
 // Instant Search Widgets
-import { hits, searchBox, configure } from 'instantsearch.js/es/widgets';
+import { hits, searchBox, configure, index } from 'instantsearch.js/es/widgets';
 
 // Autocomplete Template
 import autocompleteProductTemplate from '../templates/autocomplete-product';
+import autocompleteSuggestionTemplate from '../templates/autocomplete-suggestion';
 
 /**
  * @class Autocomplete
@@ -45,16 +46,40 @@ class Autocomplete {
    */
   _registerWidgets() {
     this._searchInstance.addWidgets([
-      configure({
-        hitsPerPage: 3,
-      }),
+      // Identifying #searchbox element
       searchBox({
         container: '#searchbox',
       }),
-      hits({
-        container: '#autocomplete-hits',
-        templates: { item: autocompleteProductTemplate },
-      }),
+
+      // Configuring primary/query suggestions index
+      index({
+        indexName: 'ccostoso_query_suggestions',
+      }).addWidgets([
+        configure({
+          hitsPerPage: 3,
+        }),
+
+        hits({
+          container: '#autocomplete-hits',
+          templates: { item: autocompleteSuggestionTemplate },
+        }),
+      ]),
+
+      // Configuring secondary/products index
+      index({
+        indexName: 'ccostoso',
+      }).addWidgets([
+        configure({
+          hitsPerPage: 3,
+        }),
+
+        hits({
+          container: '.results',
+          templates: {
+            item: autocompleteProductTemplate,
+          },
+        }),
+      ]),
     ]);
   }
 
@@ -65,6 +90,7 @@ class Autocomplete {
    */
   _startSearch() {
     this._searchInstance.start();
+    // this._querySuggestionsInstance.start();
   }
 }
 

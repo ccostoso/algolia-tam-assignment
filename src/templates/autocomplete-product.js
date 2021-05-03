@@ -1,6 +1,6 @@
 const autocompleteProduct = hit => {
-console.log(hit);
-console.log(`hit._hightlightResult: ${hit._highlightResult}`);
+// console.log(hit);
+// console.log(`hit._hightlightResult: ${hit._highlightResult}`);
 return (`<div class="autocomplete-product">
   <div class="autocomplete-product__image-container">
     <img class="autocomplete-product__image" src="${hit.image}" />
