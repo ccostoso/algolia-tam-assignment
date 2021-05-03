@@ -1,4 +1,3 @@
-require('dotenv').config();
 import Autocomplete from './components/autocomplete';
 
 // Insufficient privileges to do the following, will upload data using Algolia app
