@@ -31,7 +31,7 @@ class Autocomplete {
     this._searchClient = algoliasearch(
       'MBJPX7YK9Q',
       // I would prefer to keep this in an environment variable but I'm not sure that GitHub Pages has that functionality.
-      process.env.ALGOLIA_APIKEY || '8a02c948cc53eeadc31cd2d4ea329bff'
+      '8a02c948cc53eeadc31cd2d4ea329bff'
     );
 
     this._searchInstance = instantsearch({
